@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Nature 3D - HETIC 2026</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+</head>
+
+<body>
+  <canvas id="bg"></canvas>
+
+  <button id="pauseBtn" class="hud-btn" aria-label="Pause">⏸</button>
+
+  <div id="controlsHelp" class="hud-panel">
+    <div><b>WASD / Flèches</b> : avancer / reculer / strafe</div>
+    <div><b>Espace</b> : monter | <b>Shift</b> : descendre</div>
+    <div><b>Clic gauche</b> : orbiter | <b>Molette</b> : zoom</div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #fff;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hud-btn {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.1s ease, background 0.2s ease;
+  user-select: none;
+  z-index: 10;
+}
+
+.hud-btn:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hud-btn:active {
+  transform: scale(0.94);
+}
+
+.hud-panel {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  padding: 12px 14px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hud-perf {
+  left: auto;
+  right: 16px;
+  top: 16px;
+  bottom: auto;
+  font-variant-numeric: tabular-nums;
+  min-width: 110px;
+}
